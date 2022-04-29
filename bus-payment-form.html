@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Payment</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/w3style.css">
+
+        <script> 
+            $(function(){
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+
+    </head>
+<body>
+    <header>
+        <div id="topheader">
+            <nav class="navbar navbgc navbar-fixed-top opaque-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><img src="imgs/icons/icon.png" alt="" class="img-responsive brand"></a>
+                    </div>
+
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <div class="mynav nav navbar-nav navbar-right bd">
+                            <br>
+                            <span class="b1">
+                                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+                            </span>
+                            <span class="b2">
+                                <span class="badge mybadge">2</span><span class="ff">Payment</span>
+                            </span>
+                            <span class="b3">
+                                <span class="badge mybadge2">3</span><span class="ff">Finish</span>
+                            </span>
+                        </div>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container headtag">
+        <!-- Content -->
+        <div class="hidden-lg hidden-md">
+            <span class="b1">
+                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+            </span>
+            <span class="b2">
+                <span class="badge mybadge">2</span><span class="ff">Payment</span>
+            </span>
+            <span class="b3">
+                <span class="badge mybadge2">3</span><span class="ff">Finish</span>
+            </span>
+        </div>
+        <h3 class="ff2">Payment (Booking ID : 19929381389313)</h3>
+
+        <div class="col-md-8 col-xs-12">
+            <a href="javascript:void(0)" onclick="openCity(event, '1');">
+                <div class="w3-col m4 tablink w3-topbar w3-hover-light-grey w3-padding ff2"><h4 class="ff2">Bank Transfer</h4></div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, '2');">
+                <div class="w3-col m4 tablink w3-topbar w3-hover-light-grey w3-padding ff2"><h4 class="ff2">Credit Card</h4></div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, '3');">
+                <div class="w3-col m4 tablink w3-topbar w3-hover-light-grey w3-padding ff2"><h4 class="ff2">Indomaret</h4></div>
+            </a>
+
+            <div id="1" class="method mtop">
+                <form method="POST" class="bs-example" action="bus-finish.html">
+                    <div class="panel-group" id="accordion">
+                    
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <label for='r11' class="bank">
+                                        <input type='radio' id='r11' name='occupation' value='Working' required /> Bank BCA
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></a>
+                                    </label>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>Pada menu utama, pilih <b>Transaksi Lainnya</b></li>
+                                        <li>Pilih <b>Transfer</b></li>
+                                        <li>Pilih ke <b>Rek BCA Virtual Account</b></li>
+                                        <li>Masukkan nomor (11 digit No.Rekening pembayaran) lalu tekan <b>Benar</b></li>
+                                        <li>Masukkan jumlah tagihan yang akan Anda bayar</li>
+                                        <li>Pada halaman konfirmasi transfer akan muncul detail pembayaran anda. Jika informasi telah sesuai tekan <b>Ya</b></li>
+                                        <li>Transaksi Anda berhasil! Anda akan  mendapatkan email konfirmasi penerimaan pembayaran</li>
+                                        <li>E-Ticket penerbangan akan dikirimkan ke email Anda beberapa saat setelah pembayaran diterima</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <label for='r12' class="bank">
+                                        <input type='radio' id='r12' name='occupation' value='Working' required /> Bank Mandiri
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></a>
+                                    </label>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>Pada menu utama, pilih <b>Pembayaran</b></li>
+                                        <li>Pilih <b>Lainnya</b></li>
+                                        <li>Pilih <b>Multi Payment</b></li>
+                                        <li>Masukkan kode perusahaan / Biller Code Veritrans : 70012. Tekan <b>Benar</b></li>
+                                        <li>Masukkan Kode Pembayaran (Bill Key) Anda. Tekan : <b>Benar</b></li>
+                                        <li>Pada halaman konfirmasi akan muncul detail pembayaran Anda.Jika informasi yang ditampilkan telah sesuai, tekan b    Ya</li>
+                                        <li>Transaksi Anda berhasil! Anda akan mendapatkan email konfirmasi penerimaan pembayaran.</li>
+                                        <li>E-Ticket penerbangan akan dikirimkan ke email Anda beberapa saat setelah pembayaran diterima.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <label for='r13' class="bank">
+                                        <input type='radio' id='r13' name='occupation' value='Working' required /> Bank Permata
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></a>
+                                    </label>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>Pada menu utama,pilih <b>Transaksi Lainnya</b></li>
+                                        <li>Pilih <b>Transfer</b></li>
+                                        <li>Pilih <b>Antar Bank Online</b></li>
+                                        <li>Masukkan angka <b>013</b>(Kode Bank Permata) diikuti 16 digit <b>Nomor Virtual Account</b>(8778**).</li>
+                                        <li>Masukkan <b>Jumlah Tagihan</b> yang akan Anda bayar secara lengkap. Pembayaran dengan jumlah yang tidak sesuai akan otomatis ditolak.</li>
+                                        <li>Kosongkan nomor referensi,tekan <b>Benar</b>.</li>
+                                        <li>Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama merchant. Jika informasi telah sesuai, tekan <b>Benar</b>.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <label for='r14' class="bank">
+                                        <input type='radio' id='r14' name='occupation' value='Working' required /> Other Bank
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"></a>
+                                    </label>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li>Pada menu utama,pilih <b>Transaksi Lainnya</b></li>
+                                        <li>Pilih <b>Transfer</b></li>
+                                        <li>Pilih <b>Antar Bank Online</b></li>
+                                        <li>Masukkan angka <b>013</b>(Kode Bank Permata) diikuti 16 digit <b>Nomor Virtual Account</b>(8778**).</li>
+                                        <li>Masukkan <b>Jumlah Tagihan</b> yang akan Anda bayar secara lengkap. Pembayaran dengan jumlah yang tidak sesuai akan otomatis ditolak.</li>
+                                        <li>Kosongkan nomor referensi,tekan <b>Benar</b>.</li>
+                                        <li>Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama merchant. Jika informasi telah sesuai, tekan <b>Benar</b>.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <hr>
+                    <label for="promo">Enter Promo Code</label>
+                    <input type="text" name="promo" id="promo" class="form-control" style="border-radius:0; width:50%;">
+
+                    <p class="ff mtop">By Clicking the "Pay Now" button below, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></p>
+                    <button type="submit" class="btn mybtn2 mtop">Pay Now</button>
+                </form>
+                <div class="pricedtl mtop2">
+                    <h4 class="ff2">Price Detail</h4>
+                    <table class="table" style="text-align:center;">
+                        <tr>
+                            <td><span class="ff2">Holiday Inter Nusa (adult) x1</span></td>
+                            <td><span class="ff2">Rp 190.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="ff2">Total</h4></td>
+                            <td><h4 class="ff2"></h4>Rp 190.000</h4></td>
+                        </tr>
+                    </table>
+                </div>
+                <script>
+                    $('#r11').on('click', function(){
+                    $(this).parent().find('a').trigger('click')
+                    })
+                    
+                    $('#r12').on('click', function(){
+                    $(this).parent().find('a').trigger('click')
+                    })
+                    
+                    $('#r13').on('click', function(){
+                    $(this).parent().find('a').trigger('click')
+                    })
+                    
+                    $('#r14').on('click', function(){
+                    $(this).parent().find('a').trigger('click')
+                    })
+                </script>
+            </div>
+
+
+            <div id="2" class="method mtop" style="display:none;">
+                <form method="POST" action="bus-finish.html">
+                    <label for="nocreditcard">Credit Card Number</label>
+                    <input type="number" class="form-control" style="border-radius:0;width:50%;">
+                    <br>
+                    <label for="nocreditcard">Credit Card owner's Full Name</label>
+                    <input type="text" class="form-control" style="border-radius:0;width:50%;">
+                    <br>
+                    <label for="expiry">Expiry</label><br>
+                    <input type="date" class="form-control" style="border-radius:0;width:50%;">
+                    <hr>
+                    <label for="promo">Enter Promo Code</label>
+                    <input type="text" name="promo" id="promo" class="form-control" style="border-radius:0; width:50%;">
+
+                    <p class="ff mtop">By Clicking the "Pay Now" button below, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></p>
+                    <button type="submit" class="btn mybtn2 mtop">Pay Now</button>
+                </form>
+                <div class="pricedtl mtop2">
+                    <h4 class="ff2">Price Detail</h4>
+                    <table class="table" style="text-align:center;">
+                        <tr>
+                            <td><span class="ff2">Holiday Inter Nusa (adult) x1</span></td>
+                            <td><span class="ff2">Rp 190.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="ff2">Total</h4></td>
+                            <td><h4 class="ff2"></h4>Rp 190.000</h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <div id="3" class="method mtop" style="display:none;">
+                <ol>
+                    <li>Catat <b>Kode Pembayaran</b> beserta nominal <b>Jumlah Tagihan</b> Anda.</li>
+                    <li>Kunjungi Indomaret terdekat dengan membawa <b>Kode Pembayaran</b> Jumbo Travel Anda, beritahukan <b>Kode Pembayaran</b> ke kasir Indomaret.</li>
+                    <li>Kasir Indomaret akan mengonfirmasi transaksi dengan menanyakan <b>Jumlah Tagihan</b> dan nama merchant.</li>
+                    <li>Konfirmasikan pembayaran Anda ke kasir.</li>
+                    <li>Transaksi Anda berhasil! Anda akan mendapatkan email konfirmasi pembayaran Anda.</li>
+                    <li>E-Ticket penerbangan akan dikirimkan ke Email Anda beberapa saat setelah pembayaran Anda diterima.</li>
+                    <li>Simpan bukti pembayaran Indomaret Anda sebagai referensi jika Anda memerlukan bantuan Customer Care Jumbo Travel.</li>
+                </ol>
+
+                <label for="promo">Enter Promo Code</label>
+                <input type="text" name="promo" id="promo" class="form-control" style="border-radius:0; width:50%;">
+
+                <p class="ff mtop">By Clicking the "Pay Now" button below, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a></p>
+                <button class="btn mybtn2 mtop" onclick="window.location.href='bus-finish.html'">Pay Now</button>
+
+                <div class="pricedtl mtop2">
+                    <h4 class="ff2">Price Detail</h4>
+                    <table class="table" style="text-align:center;">
+                        <tr>
+                            <td><span class="ff2">Holiday Inter Nusa (adult) x1</span></td>
+                            <td><span class="ff2">Rp 190.000</span></td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="ff2">Total</h4></td>
+                            <td><h4 class="ff2"></h4>Rp 190.000</h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <script>
+                function openCity(evt, paymentMethod) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("method");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-border-custome", "");
+                }
+                document.getElementById(paymentMethod).style.display = "block";
+                evt.currentTarget.firstElementChild.className += " w3-border-custome";
+                }
+            </script>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+                <div class="bookform">
+                    <h3 class="ff2 text-center">Medan - Aceh Selatan</h3>
+                    <hr>
+                    <h5 class="ff">Sunday, March 16, 2018</h5>
+                    <br>
+                    <h3 class="ff2">Holiday Inter Nusa</h3>
+                    <span>Executive 7 Innova</span>
+                    <br>
+                    <table class="table" style="text-align:center;">
+                        <tr>
+                            <td><h4 class="ff2">19.30</h4></td>
+                            <td><h4 class="ff2">Medan</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="ff2">08.30</h4></td>
+                            <td><h4 class="ff2">Aceh Selatan</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="ff2">Seat :</span>
+                                <span class="myseat">C2</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        <!-- /Content -->
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

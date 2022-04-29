@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Finish</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script> 
+            $(function(){
+            $("#header").load("includes/header.html"); 
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+    <style>
+    table tr th, table tr td {
+        border: none !important;
+    }
+    </style>
+    </head>
+<body>
+    <header>
+        <div id="topheader">
+            <nav class="navbar navbgc navbar-fixed-top opaque-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><img src="imgs/icons/icon.png" alt="" class="img-responsive brand"></a>
+                    </div>
+
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <div class="mynav nav navbar-nav navbar-right bd">
+                            <br>
+                            <span class="b1">
+                                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+                            </span>
+                            <span class="b2">
+                                <span class="badge mybadge">2</span><span class="ff">Review</span>
+                            </span>
+                            <span class="b2">
+                                <span class="badge mybadge">3</span><span class="ff">Payment</span>
+                            </span>
+                            <span class="b3">
+                                <span class="badge mybadge">4</span><span class="ff">Finish</span>
+                            </span>
+                        </div>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </header> 
+
+    <div class="container headtag">
+        <div class="hidden-lg hidden-md">
+            <span class="b1">
+                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+            </span>
+            <span class="b2">
+                <span class="badge mybadge">2</span><span class="ff">Review</span>
+            </span>
+            <span class="b2">
+                <span class="badge mybadge">3</span><span class="ff">Payment</span>
+            </span>
+            <span class="b3">
+                <span class="badge mybadge">4</span><span class="ff">Finish</span>
+            </span>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <h3 class="ff2">Booking Details</h3>
+
+            <div class="bookform">
+                <h3 class="ff2">Flight</h3>
+                <hr>
+                <h3 class="ff2"><i class="fa fa-plane" aria-hidden="true" style="margin-right:5px;color:#13e7ff;"></i>MEDAN (KNO) - Bali (DPS)</h3>
+                <br>
+                <img src="https://tvlk.imgix.net/imageResource/2015/12/17/1450349861201-09ec8f298222a73d66e8e96aa3b918f0.png?auto=compress%2Cformat&cs=srgb&fm=png&ixlib=java-1.1.1&q=75" alt="" class="img-responsive" width="35">
+                <h4 class="ff2">Lion JT-22</h4>
+                <table class="table">
+                    <tr>
+                        <th>Depart</th>
+                        <th>Arrive</th>
+                        <th>Seat</th>
+                    </tr>
+                    <tr>
+                        <td>Monday, April 16th 2018 <br><b>18.45</b></td>
+                        <td>Monday, April 16th 2018 <br><b>21.30</b></td>
+                        <td>Business</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="bookform mtop2">
+                <h3 class="ff2">Hotel</h3>
+                <hr>
+                <h3 class="ff2"><i class="fa fa-building" aria-hidden="true" style="margin-right:5px;color:#13e7ff;"></i>Kuta Majesty Indah</h3>
+                <br>
+                <img src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/30000002000644763_lp_18" alt="" class="img-responsive" width="150">
+                <h4 class="ff2">Majesty Room Only Promo</h4>
+                <table class="table">
+                    <tr>
+                        <th>Check-in</th>
+                        <th>Check-out</th>
+                        <th>Person(s)</th>
+                        <th>Room(s)</th>
+                        <th>Night(s)</th>
+                    </tr>
+                    <tr>
+                        <td>Mon, April 16th 2018</td>
+                        <td>Wed, April 18th 2018</td>
+                        <td>1 (adult)</td>
+                        <td>1 room</td>
+                        <td>2 nights</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="bookform mtop2">
+                <table class="table">
+                    <tr>
+                        <th>Booked by</th>
+                        <th>Booking date</th>
+                        <th>Booking ID</th>
+                    </tr>
+                    <tr>
+                        <td>Mr. <b>Harvine Khong</b></td>
+                        <td>Mon, April 9th 2018</td>
+                        <td>19929381389313</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="bookform mtop2">
+                <h4 class="ff2">Payment</h4>
+                <table class="table">
+                    <tr>
+                        <th>Payment type</th>
+                        <th>Payment status</th>
+                        <th>E-ticket status</th>
+                    </tr>
+                    <tr>
+                        <td>Transfer</td>
+                        <td><span class="badge">PAID</span></td>
+                        <td><span class="badge pending">PENDING</span></td>
+                        <!-- <td><span class="badge approve">ISSUED</span><br><br><a href="#">View E-ticket</a></td> -->
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+</body>
+</html>

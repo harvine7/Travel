@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Register</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script> 
+            $(function(){
+            $("#header").load("includes/header.html"); 
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+    </head>
+<body>
+    <div id="header"></div>
+
+<!-- Content -->
+<div class="container headtag">
+    <div class="col-md-12 col-xs-12 mtop">
+        <div class="col-md-12 col-xs-12">
+            <h3 class="ff2 text-center">Sign Up with :</h3>
+            <div class="col-md-6 col-xs-12">
+                <button class="ff2 white fb fb2"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</button>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <button class="ff2 white gl gl2"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xs-12 mtop">
+            <p class="ff2 text-center">Or</p>
+            <div class="myform4">
+                <form action="">
+                    <label for="name">Full Name</label> <br>
+                    <input type="text" name="password" class="form-control myform"><br>
+
+                    <label for="name">Email</label> <br>
+                    <input type="email" name="password" class="form-control myform"><br>
+
+                    <label for="name">Password</label> <br>
+                    <input type="password" name="password" class="form-control myform"><br>
+
+                    <label for="name">Confirm Password</label> <br>
+                    <input type="password" name="password" class="form-control myform"><br>
+
+                    <input type="checkbox" name="inform"><span  style="margin-left:5px;">I want to get notified about the latest promo.</span>
+
+                    <p class="ff text-center mtop">By Clicking the "Sign Up" button below, you agree to our <a href="#" class="reg">Privacy Policy</a> and <a href="#">Terms and Conditions</a></p>
+                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="btnsubmit2 ff2" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>

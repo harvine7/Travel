@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Flight Prebooking</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script> 
+            $(function(){
+            $("#header").load("includes/header.html"); 
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+
+    </head>
+<body>
+   <div id="header"></div>
+
+    <!-- Content -->
+    <div class="container headtag">
+        <div class="col-md-12 col-xs-12">
+            <div class="table-responsive top">
+                <table class="table mytable2">
+                    <tr>
+                        <td colspan="5">
+                            <button class="accordion">
+                                <table class="table" style="background-color : none">
+                                    <tr>
+                                        <td>
+                                            <img src="https://tvlk.imgix.net/imageResource/2015/12/17/1450349861201-09ec8f298222a73d66e8e96aa3b918f0.png?auto=compress%2Cformat&cs=srgb&fm=png&ixlib=java-1.1.1&q=75" alt="" class="img-responsive" width="50">
+                                            <h3 class="ff2">Lion JT-22</h3>
+                                            <span  style="color:#8f8fac;">Economy</span>
+                                            <br><br>
+                                            <span  style="color:#13e7ff;">Flight details <i class="dw"></i></span>
+                                        </td>
+                                        <td>
+                                            <h3 class="ff2">Jakarta (CGK) - Bali (DPS)</h3>
+                                            <br>
+                                            <p class="ff sch">
+                                                18.45 <i class="fa fa-plane" aria-hidden="true" style="padding:0 15%;"></i> 21.30
+                                            </p>
+                                            <p class="ff2">1h 45m (direct)</p>
+                                        </td>
+                                        <td>
+                                            <br>
+                                            <span class="ff srv"><i class="fa fa-suitcase fserve" aria-hidden="true"></i> Baggage : 20 Kg</span>
+                                            <br><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </button>
+                            <div class="mypanel ff">
+                                <table class="table details">
+                                    <tr>
+                                        <td>
+                                            <img src="https://tvlk.imgix.net/imageResource/2015/12/17/1450349861201-09ec8f298222a73d66e8e96aa3b918f0.png?auto=compress%2Cformat&cs=srgb&fm=png&ixlib=java-1.1.1&q=75" alt="" class="img-responsive" width="50">
+                                            <br>
+                                            <h4 class="ff2">Lion JT-22</h4>
+                                            <span  style="color:#8f8fac;">Economy</span>
+                                        </td>
+
+                                        <td>
+                                            <p class="ff2">
+                                                Sunday, March 16th 2018, 18:45 CGK Jakarta
+                                                <br>
+                                                <span  style="color:#13e7ff;">Soekarno-Hatta Int'l Airport</span>
+                                            </p>
+                                            <p class="ff duration">Duration : 1hour 45minutes</p>
+                                            <p class="ff2">
+                                                Sunday, March 16th 2018, 21:30 DPS Bali
+                                                <br>
+                                                <span  style="color:#13e7ff;">Ngurah Rai Int'l Airport</span>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <br><br>
+                                            <span class="ff srv"><i class="fa fa-suitcase fserve" aria-hidden="true"></i> Baggage : 20 Kg</span>
+                                            <br><br>
+                                        </td>
+                                        <td>
+                                            <br>
+                                            <p >Aircraft <span style="color:#8f8fac;">Boeing-737</span></p>
+                                            <p >Seat Layout <span style="color:#8f8fac;">3-3</span></p>
+                                            <p >Seat Pitch <span style="color:#8f8fac;">29-inch (standard)</span></p>
+                                            <p >Cabin Baggage <span style="color:#8f8fac;">7 Kg</span></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 col-xs-12 mtop">
+            <div class="col-md-6 col-xs-12 addinf">
+                <h3 class="ff2">Additional information</h3>
+                <hr>
+                <h4 class="ff2">Refund</h4>
+                <span class="badge ff2">Refundable</span>
+                <p style="color:#8f8fac;">
+                    Any cancellations or changes made to this booking may be subjected to a cancellation fee. Please make sure you have understood the refund policy before requesting a refund.
+                </p>
+                <hr>
+                <h4 class="ff2">Reschedule</h4>
+                <span class="badge ff2">Reschedule available</span>
+                <p style="color:#8f8fac;">
+                    This flight can be rescheduled. Please make sure you have understood the policy before requesting a reschedule.
+                </p>
+            </div>
+
+            <div class="col-md-5 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 addinf">
+                <h3 class="ff2">Price Details</h3>
+                <hr>
+                <span  style="float:left;">Adult (x1)</span>
+                <span  style="float:right;">Rp 489.100</span>
+                <br><br>
+                <span  style="float:left;">Baggage CGK-DPS </span>
+                <span  style="float:right;">Rp 0</span>
+                <br>
+                <hr>
+                <span  style="float:left;"><h4 class="ff2">Price you pay</h4> </span>
+                <span  style="float:right;"><h4 class="ff2">Rp 489.100</h4></span>
+                <button type="button" class="btnsubmit2 ff2" onclick="window.location.href='flight-booking-form.html'">Continue to Booking</button>
+            </div>
+        </div>
+    </div>
+    <!-- /Content -->
+
+   <div id="footer"></div>
+   <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active2");
+            var mypanel = this.nextElementSibling;
+            if (mypanel.style.maxHeight){
+              mypanel.style.maxHeight = null;
+            } else {
+              mypanel.style.maxHeight = mypanel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script> 
+</body>
+</html>

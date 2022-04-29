@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#13e7ff">
+    
+    <title>Jumbo Travel - Check My Order</title>
+    <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- DatePicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+    <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- Pace -->
+    <script src="pacejs/pace.js"></script>
+    <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script> 
+        $(function(){
+        $("#header").load("includes/header.html"); 
+        $("#footer").load("includes/footer.html"); 
+        });
+    </script>
+
+    <script>
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+        {
+            $('.opaque-navbar').addClass('opaque');
+            $('.thenav').addClass('opaque2');
+        } else {
+            $('.opaque-navbar').removeClass('opaque');
+            $('.thenav').removeClass('opaque2');
+        }
+    });
+    </script>
+
+</head>
+<body>
+<div id="header"></div>
+
+<!-- Content -->
+<div class="container headtag">
+    <div class="col-md-12 col-xs-12">
+        <hr>
+        <h2 class="ff2">Check My Order</h2>
+
+        <div class="col-md-5 col-xs-12">
+            <div class="myform5">
+                <form action="">
+                    <label class="radiobtn ff">Flight Ticket
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radiobtn ff">Hotel Reservation
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label for="name">Booking ID</label>
+                    <input type="text" name="code" class="form-control myform">
+                    <p >Enter the 13-digit booking ID or your order ID</p><br>
+
+                    <label for="name">Phone Number</label>
+                    <input type="number" name="code" class="form-control myform" placeholder="+62">
+                    <p >Phone number that has been used to make a booking</p><br>
+                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="btnsubmit2 ff2" value="Check My Order">
+                </form>
+            </div>
+        </div>
+        
+        <div class="col-md-7 col-xs-12">
+            <p class="ff2">
+                Fill in the form in order to check your booked flight or reservation.
+                <br><br>
+                Booking ID is the 13-digit code sent to your Email. Phone number is the number you've been used to make a booking.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- /Content -->
+<div id="footer"></div>
+</body>
+</html>

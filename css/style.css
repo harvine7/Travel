@@ -1,0 +1,1653 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.forbgc {
+    background: url(../imgs/bgc.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Navbar */
+.thenav {
+  background-color: #13e7ff;
+  padding: 1% 0;
+  text-align: right;
+}
+.thenav ul {
+  list-style-type: none;
+  margin: 0;
+}
+.thenav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+ul.firstnav li a {
+  text-decoration: none;
+}
+ul.firstnav li a:hover {
+  text-decoration: none;
+  color: white;
+}
+ul.dropdown-lr {
+  width: 300px;
+  margin-top: 20%;
+  left: -230px;
+}
+ul.lr2 {
+  width: 400px !important;
+}
+ul.lr3 {
+  width: 50px !important;
+  left: -60px;
+  text-align: center;
+}
+a.lgg {
+  margin-left: 7px;
+}
+a.lgg:hover {
+  color: #13e7ff !important;
+}
+/* mobile fix */
+@media (max-width: 768px) {
+	.dropdown-lr h3 {
+		color: black;
+	}
+	.dropdown-lr label {
+		color: black;
+	}
+}
+.ctr ul {
+  padding: 0;
+}
+.ctr ul li {
+  display: block;
+  line-height: 25px;
+}
+.ctr ul li a {
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black !important;
+}
+.ctr ul li a:hover {
+  color: #13e7ff !important;
+}
+
+a.reg:hover {
+  color: #13e7ff !important;
+}
+button.fb, button.gl {
+  margin: 0 auto;
+  display: block;
+}
+button.fb {
+  background-color: #4267b2;
+  border: none;
+  padding: 5px 20px;
+}
+button.gl {
+  background-color: #ea4335;
+  border: none;
+  padding: 5px 20px;
+}
+
+
+.navbgc {
+    background-color: rgba(255,255,255,0.85);
+}
+.mynav {
+    padding: 2% 0 !important;
+    border-radius: 0;
+}
+.mynav li a {
+    color: black;
+    font-weight: bold;
+}
+#topheader .navbar-nav li > a {
+    text-transform: capitalize;
+    color: #333;
+    -webkit-transition: background-color .2s, color .2s;
+    transition: background-color .2s, color .2s;
+}
+#topheader .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+background-color: #13e7ff;
+color: #fff;
+}
+
+#topheader .navbar-nav li.active > a {
+background-color: #13e7ff;
+color: white;
+}
+.navbar-toggle {
+    border: 1px solid black !important;
+}
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.opaque-navbar {
+    background-color: rgba(255,255,255,0.85);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    transition: background-color .5s ease 0s;
+}
+.opaque-navbar.opaque {
+    background-color: #fff;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque2 {
+  display: none;
+}
+.anchor{
+  display: block;
+  height: 135px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+/* Needed Css */
+.mtop {
+    margin-top: 3%;
+}
+.mtop2 {
+    margin-top: 6%;
+}
+.ptopbtm {
+    padding: 3% 0;
+}
+.ptopbtm2 {
+    padding: 6% 0;
+}
+.ff2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+.white {
+    color: white;
+}
+.shadow {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    padding-top:15%;
+}
+
+
+/* Plugin For 5-column Layout */
+.col-xs-5th-1, .col-xs-5th-2, .col-xs-5th-3, .col-xs-5th-4 {
+    float: left;
+  }
+  
+  .col-xs-5th-5 {
+    float: left;
+    width: 100%;
+  }
+  
+  .col-xs-5th-4 {
+    width: 80%;
+  }
+  
+  .col-xs-5th-3 {
+    width: 60%;
+  }
+  
+  .col-xs-5th-2 {
+    width: 40%;
+  }
+  
+  .col-xs-5th-1 {
+    width: 20%;
+  }
+  
+  .col-xs-5th-pull-5 {
+    right: 100%;
+  }
+  
+  .col-xs-5th-pull-4 {
+    right: 80%;
+  }
+  
+  .col-xs-5th-pull-3 {
+    right: 60%;
+  }
+  
+  .col-xs-5th-pull-2 {
+    right: 40%;
+  }
+  
+  .col-xs-5th-pull-1 {
+    right: 20%;
+  }
+  
+  .col-xs-5th-pull-0 {
+    right: auto;
+  }
+  
+  .col-xs-5th-push-5 {
+    left: 100%;
+  }
+  
+  .col-xs-5th-push-4 {
+    left: 80%;
+  }
+  
+  .col-xs-5th-push-3 {
+    left: 60%;
+  }
+  
+  .col-xs-5th-push-2 {
+    left: 40%;
+  }
+  
+  .col-xs-5th-push-1 {
+    left: 20%;
+  }
+  
+  .col-xs-5th-push-0 {
+    left: auto;
+  }
+  
+  .col-xs-5th-offset-5 {
+    margin-left: 100%;
+  }
+  
+  .col-xs-5th-offset-4 {
+    margin-left: 80%;
+  }
+  
+  .col-xs-5th-offset-3 {
+    margin-left: 60%;
+  }
+  
+  .col-xs-5th-offset-2 {
+    margin-left: 40%;
+  }
+  
+  .col-xs-5th-offset-1 {
+    margin-left: 20%;
+  }
+  
+  .col-xs-5th-offset-0 {
+    margin-left: 0%;
+  }
+  
+  @media (min-width: 768px) {
+    .col-sm-5th-1, .col-sm-5th-2, .col-sm-5th-3, .col-sm-5th-4 {
+      float: left;
+    }
+  
+    .col-sm-5th-5 {
+      float: left;
+      width: 100%;
+    }
+  
+    .col-sm-5th-4 {
+      width: 80%;
+    }
+  
+    .col-sm-5th-3 {
+      width: 60%;
+    }
+  
+    .col-sm-5th-2 {
+      width: 40%;
+    }
+  
+    .col-sm-5th-1 {
+      width: 20%;
+    }
+  
+    .col-sm-5th-pull-5 {
+      right: 100%;
+    }
+  
+    .col-sm-5th-pull-4 {
+      right: 80%;
+    }
+  
+    .col-sm-5th-pull-3 {
+      right: 60%;
+    }
+  
+    .col-sm-5th-pull-2 {
+      right: 40%;
+    }
+  
+    .col-sm-5th-pull-1 {
+      right: 20%;
+    }
+  
+    .col-sm-5th-pull-0 {
+      right: auto;
+    }
+  
+    .col-sm-5th-push-5 {
+      left: 100%;
+    }
+  
+    .col-sm-5th-push-4 {
+      left: 80%;
+    }
+  
+    .col-sm-5th-push-3 {
+      left: 60%;
+    }
+  
+    .col-sm-5th-push-2 {
+      left: 40%;
+    }
+  
+    .col-sm-5th-push-1 {
+      left: 20%;
+    }
+  
+    .col-sm-5th-push-0 {
+      left: auto;
+    }
+  
+    .col-sm-5th-offset-5 {
+      margin-left: 100%;
+    }
+  
+    .col-sm-5th-offset-4 {
+      margin-left: 80%;
+    }
+  
+    .col-sm-5th-offset-3 {
+      margin-left: 60%;
+    }
+  
+    .col-sm-5th-offset-2 {
+      margin-left: 40%;
+    }
+  
+    .col-sm-5th-offset-1 {
+      margin-left: 20%;
+    }
+  
+    .col-sm-5th-offset-0 {
+      margin-left: 0%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-5th-1, .col-md-5th-2, .col-md-5th-3, .col-md-5th-4 {
+      float: left;
+    }
+  
+    .col-md-5th-5 {
+      float: left;
+      width: 100%;
+    }
+  
+    .col-md-5th-4 {
+      width: 80%;
+    }
+  
+    .col-md-5th-3 {
+      width: 60%;
+    }
+  
+    .col-md-5th-2 {
+      width: 40%;
+    }
+  
+    .col-md-5th-1 {
+      width: 20%;
+    }
+  
+    .col-md-5th-pull-5 {
+      right: 100%;
+    }
+  
+    .col-md-5th-pull-4 {
+      right: 80%;
+    }
+  
+    .col-md-5th-pull-3 {
+      right: 60%;
+    }
+  
+    .col-md-5th-pull-2 {
+      right: 40%;
+    }
+  
+    .col-md-5th-pull-1 {
+      right: 20%;
+    }
+  
+    .col-md-5th-pull-0 {
+      right: auto;
+    }
+  
+    .col-md-5th-push-5 {
+      left: 100%;
+    }
+  
+    .col-md-5th-push-4 {
+      left: 80%;
+    }
+  
+    .col-md-5th-push-3 {
+      left: 60%;
+    }
+  
+    .col-md-5th-push-2 {
+      left: 40%;
+    }
+  
+    .col-md-5th-push-1 {
+      left: 20%;
+    }
+  
+    .col-md-5th-push-0 {
+      left: auto;
+    }
+  
+    .col-md-5th-offset-5 {
+      margin-left: 100%;
+    }
+  
+    .col-md-5th-offset-4 {
+      margin-left: 80%;
+    }
+  
+    .col-md-5th-offset-3 {
+      margin-left: 60%;
+    }
+  
+    .col-md-5th-offset-2 {
+      margin-left: 40%;
+    }
+  
+    .col-md-5th-offset-1 {
+      margin-left: 20%;
+    }
+  
+    .col-md-5th-offset-0 {
+      margin-left: 0%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .col-lg-5th-1, .col-lg-5th-2, .col-lg-5th-3, .col-lg-5th-4 {
+      float: left;
+    }
+  
+    .col-lg-5th-5 {
+      float: left;
+      width: 100%;
+    }
+  
+    .col-lg-5th-4 {
+      width: 80%;
+    }
+  
+    .col-lg-5th-3 {
+      width: 60%;
+    }
+  
+    .col-lg-5th-2 {
+      width: 40%;
+    }
+  
+    .col-lg-5th-1 {
+      width: 20%;
+    }
+  
+    .col-lg-5th-pull-5 {
+      right: 100%;
+    }
+  
+    .col-lg-5th-pull-4 {
+      right: 80%;
+    }
+  
+    .col-lg-5th-pull-3 {
+      right: 60%;
+    }
+  
+    .col-lg-5th-pull-2 {
+      right: 40%;
+    }
+  
+    .col-lg-5th-pull-1 {
+      right: 20%;
+    }
+  
+    .col-lg-5th-pull-0 {
+      right: auto;
+    }
+  
+    .col-lg-5th-push-5 {
+      left: 100%;
+    }
+  
+    .col-lg-5th-push-4 {
+      left: 80%;
+    }
+  
+    .col-lg-5th-push-3 {
+      left: 60%;
+    }
+  
+    .col-lg-5th-push-2 {
+      left: 40%;
+    }
+  
+    .col-lg-5th-push-1 {
+      left: 20%;
+    }
+  
+    .col-lg-5th-push-0 {
+      left: auto;
+    }
+  
+    .col-lg-5th-offset-5 {
+      margin-left: 100%;
+    }
+  
+    .col-lg-5th-offset-4 {
+      margin-left: 80%;
+    }
+  
+    .col-lg-5th-offset-3 {
+      margin-left: 60%;
+    }
+  
+    .col-lg-5th-offset-2 {
+      margin-left: 40%;
+    }
+  
+    .col-lg-5th-offset-1 {
+      margin-left: 20%;
+    }
+  
+    .col-lg-5th-offset-0 {
+      margin-left: 0%;
+    }
+  }
+  
+/* Plugin For 5-column Layout */
+
+
+
+
+/* Main css */
+.services img {
+    display: block;
+    margin: 0 auto;
+}
+.carousel-caption {
+  margin-bottom: 20px;
+}
+.mybtn {
+    margin: 0 auto;
+    display: block;
+    padding: 5% 7%;
+    background-color: transparent;
+    border: 1px solid #13e7ff;
+    transition: all 0.3s;
+}
+.mybtn:hover {
+    background-color: #13e7ff;
+    color: white;
+}
+
+.mybtn2 {
+    padding: 2% 5%;
+    border-radius: 0;
+    background-color: #13e7ff;
+    color: white;
+    transition: all 0.3s;
+}
+.mybtn2:hover {
+    background-color: #000;
+    color: white;
+}
+
+.mybtn3 {
+    padding: 5% 20%;
+    margin-top: 20%;
+    border-radius: 0;
+    background-color: #13e7ff;
+    color: white;
+    transition: all 0.3s;
+}
+.mybtn3:hover {
+    background-color: #1bc2d4;
+    color: white;
+}
+
+.mybtn4 {
+    padding: 1% 5%;
+    display: block;
+    z-index: -1;
+    margin: 3% auto 0 auto;
+    border-radius: 0;
+    background-color: #13e7ff;
+    color: white;
+    transition: all 0.3s;
+}
+.mybtn4:hover {
+    background-color: #1bc2d4;
+    color: white;
+}
+
+.mybtn5 {
+    display: block;
+    border-radius: 0;
+    background-color: #13e7ff;
+    color: white;
+    transition: all 0.3s;
+}
+.mybtn5:hover {
+    background-color: #1bc2d4;
+    color: white;
+}
+
+.mybtn6 {
+  margin-top: 30%;
+  border-radius: 0;
+  background-color: #13e7ff;
+  color: white;
+  transition: all 0.3s;
+}
+.mybtn6:hover {
+  background-color: #1bc2d4;
+  color: white;
+}
+
+.mybtn7 {
+  margin:3% auto;
+  display: block;
+  width: 65%;
+  padding: 3% 0;
+  border-radius: 0;
+  background-color: #13e7ff;
+  color: white;
+  transition: all 0.3s;
+
+}
+.mybtn7:hover {
+  background-color: #1bc2d4;
+  color: white;
+}
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+
+.btnsubmit {
+    border-radius: 0;
+    padding: 2% 5%;
+    background-color: transparent;
+    border: 1px solid #13e7ff;
+    transition: all 0.3s;
+}
+.btnsubmit:hover {
+    background-color: #13e7ff;
+    color: white;
+}
+
+.btnlogin {
+  padding: 5% 7%;
+  background-color: transparent;
+  border: 1px solid #13e7ff;
+  transition: all 0.3s;
+}
+.btnlogin:hover {
+  background-color: #13e7ff;
+  color: white;
+}
+
+.testimoni{
+    width:100%
+}
+.testimoni .header{
+    font-size:30px;
+    color:#252525;
+    line-height:1.3;
+    margin:40px 0px;
+    text-align:center;
+}
+.testimoni img {
+    width:100%;
+    height:auto;
+}
+.clear-padding {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:0;
+}
+.testi-sm {
+    display:none
+}
+.demo-3{
+    position:relative;
+    overflow:hidden;
+    float:left;
+}
+.demo-3 figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+.demo-3 figure img{
+    display:block;
+    position:relative;
+    z-index:6;
+    margin:0;
+}
+.demo-3 figure figcaption{
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background-color: #6accb2;
+}
+.demo-3 figure p{
+    display:block;
+    font-size:14px;
+    line-height:10px;
+    text-align:center;
+    padding:8% 10% 3% 10%;
+    margin:0;
+    color:#fff;
+}
+.demo-3 figure figcaption{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#13e7ff;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+.demo-3 figure img {
+    width:100.5%;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+.demo-3 figure:hover img,figure.hover img{
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption{
+    -webkit-transform:rotateY(0deg);
+    -moz-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+}
+@media (max-width: 1024px){
+    .demo-3 figure p{
+        font-size:15px;
+        line-height:25px;
+    }
+    .demo-3 figure h2{
+        font-size:11px;
+    }
+}
+
+.checked {
+    color: yellow;
+}
+
+.bgc2 {
+    background: url(../imgs/bgc2.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+.bgc3 {
+    background: url(../imgs/map1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.bgc4 {
+    background: url(../imgs/map2.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.black ul li {
+    list-style-type: none;
+}
+.black ul li a {
+    color: #252525;
+}
+
+.myform {
+    border-radius: 0;
+    padding: 5%;
+}
+.myform2 {
+    border-radius: 0;
+    padding: 5%;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #13e7ff;
+    background-color: transparent;
+}
+.myform3 {
+    border-radius: 0;
+    color: white;
+    background-color: transparent;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+option {
+    color: black;
+}
+
+.theicon1 {
+    margin-right: 10px;
+    font-size: 20px;
+    color: yellow;
+}
+.theicon2 {
+    margin-right: 10px;
+    font-size: 20px;
+    color: skyblue;
+}
+.theicon3 {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #f13232;
+}
+.theicon4 {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+}
+.theicon5 {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #808cb1e0;
+}
+
+.infoicon {
+    color: #13e7ff;
+    font-size: 15px;
+}
+.info {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(1,174,240,0.3);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgba(1,174,240,0.3);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+/* Register Page CSS */
+.headtag {
+  margin-top: 10%;
+}
+button.fb2, button.gl2 {
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+button.fb2 {
+  float:right;
+}
+button.gl2 {
+  float:left;
+}
+.myform4 {
+  padding: 5%;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btnsubmit2 {
+  width: 100%;
+  border-radius: 0;
+  padding: 2% 5%;
+  color: white;
+  background-color: #13e7ff;
+  border: 1px solid #13e7ff;
+  transition: all 0.3s;
+}
+.btnsubmit2:hover {
+  background-color: #1395ff;
+  color: white;
+}
+/* /Register Page CSS */
+
+
+/* Check Order Page CSS */
+.myform5 {
+  padding: 3% 5%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.radiobtn {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiobtn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobtn:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobtn input:checked ~ .checkmark {
+  background-color: #13e7ff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobtn input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobtn .checkmark:after {
+top: 9px;
+left: 9px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: white;
+}
+/* /Check Order Page CSS */
+
+
+
+/* Hotel Page CSS */
+div.forbgc2 {
+  background: url(../imgs/banners/banner1.jpg);
+  padding:20% 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+table.mytable {
+  width: 100%;
+  text-align: left;
+}
+table.mytable h3 {
+  margin: 0;
+}
+table.mytable tr td {
+  padding-right: 5%;
+}
+table.mytable tr td:nth-child(2) {
+  text-align: left;
+  padding-right: 25%;
+}
+table.mytable tr td:nth-child(3) {
+  text-align: left !important;
+}
+strike {
+  color: #b4b4b4;
+}
+.imp {
+  color: #13e7ff;
+  margin-top: 20px;
+}
+.imp2 {
+  color: #13e7ff;
+}
+.price {
+  font-size: 27px;
+}
+.rev {
+  background-color: #f6f6f6;
+  padding: 2%;
+}
+/* /Hotel Page CSS */
+
+
+
+
+/* Flight Page CSS */
+div.forbgc3 {
+  background: url(https://tvlk.imgix.net/imageResource/2017/10/23/1508746946139-638a9887c2f7edca02e7b49255e94736.png?auto=compress%2Cformat&cs=srgb&fm=png&ixlib=java-1.1.1&q=75);
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+p.sch {
+  font-size: 25px;
+}
+table.mytable2 {
+  width: 100%;
+  text-align: left;
+}
+table.mytable2 h3 {
+  margin: 0;
+}
+table.mytable2 tr td {
+  border: none;
+  padding-right: 5%;
+}
+table.mytable2 tr td:nth-child(2) {
+  text-align: left;
+}
+table.details tr td {
+  background-color: #eee;
+}
+p.duration {
+  border:1px solid rgba(0,0,0,0.3);
+  padding: 3px;
+  display: inline-block;
+}
+i.dw {
+  border: solid #13e7ff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: 0 0 3px 4px;
+  padding: 3px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.srv {
+  font-size: 18px;
+}
+.fserve {
+  color:#13e7ff;
+  margin-right: 10px;
+}
+.btnsrv {
+  margin-top: 10%;
+  z-index: 99;
+}
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active2 {
+  background-color: #fff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active2:after {
+  content: "\2212";
+}
+
+.mypanel {
+  margin: 0;
+  padding: 0 3%;
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* /Flight Page CSS */
+
+
+
+/* Promo Page CSS */
+div.forbgc4 {
+  background: url(../imgs/banners/banner2.jpg);
+  padding:20% 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ol.prm {
+  padding-left: 15px;
+}
+/* /Promo Page CSS */
+
+
+
+/* Flight Prebooking Page */
+.addinf {
+  padding: 1%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.addinf h3 {
+  margin: 1% 0;
+}
+/* /Flight Prebooking Page */
+
+
+
+/* Flight Booking Form Page CSS */
+.bd {
+  width: 40%;
+}
+.bd2 {
+  width: 50%;
+}
+.bd3 {
+  width: 60%;
+}
+.mybadge {
+  background-color: #13e7ff;
+  margin-right: 5px !important;
+}
+.mybadge2 {
+  background-color: transparent;
+  color: black;
+  border : 1px solid #13e7ff;
+  margin-right: 5px !important;
+}
+.b1, .b2, .b3, .b4 {
+  margin-right: 6% !important;
+}
+.bookform {
+  overflow: auto;
+  padding: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* /Flight Booking Form Page CSS */
+
+
+
+/* Flight Payment Form Page CSS */
+.bs-example {
+  margin: 20px;
+}
+.panel {
+  margin: 0 !important;
+  background-color: #f5f5f5;
+  max-height: 300px;
+  overflow: auto;
+}
+label.bank:hover {
+  cursor : pointer;
+}
+.pricedtl {
+  padding: 1% 2%;
+  border: 1px dotted rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+}
+span.pending {
+  background-color: red;
+}
+span.approve, span.save {
+  background-color: #13e7ff;
+}
+/* /Flight Payment Form Page CSS */
+
+
+
+/* Train Page CSS */
+div.forbgc5 {
+  background: url(../imgs/banners/banner3.jpg);
+  padding:20% 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* /Train Page CSS */
+
+
+
+
+/* Bus Page CSS */
+div.forbgc6 {
+  background: url(../imgs/banners/banner4.jpeg);
+  padding:20% 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seat {
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 7px;
+  padding: 5px;
+}
+.bookseat button {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #d14545;
+  cursor: pointer;
+}
+.bookseat button:hover {
+  background-color: #13e7ff;
+  color: white;
+  border: 1px solid #d14545;
+}
+button.booked {
+  background-color: #13e7ff;
+  color: white;
+}
+.ket {
+  background-color: transparent;
+  border: 1px solid #d14545;
+  border-radius: 3px;
+  margin: 5px;
+}
+span.myseat {
+  background-color: transparent;
+  border-radius: 3px;
+  background-color: #13e7ff;
+  color: white;
+  padding: 3px;
+}
+/* /Bus Page CSS */
+
+
+
+
+
+/* Flight + Hotel Page CSS */
+div.forbgc7 {
+  background: url(../imgs/banners/banner5.jpg);
+  padding:20% 0;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.total {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.box input:checked ~ .checkmark {
+  background-color: #13e7ff;
+  border-radius: 0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.box .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* /Flight + Hotel Page CSS */
+
+
+
+/* Profile Page CSS */
+.lefttab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 5% 2%;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.lefttab button.active {
+  background-color: #13e7ff;
+  color: white;
+}
+.ava {
+  border-radius: 50%;
+}
+/* /Profile Page CSS */
+
+
+/* Carousel */
+
+/* /Carousel */
+
+
+footer {
+	margin-top: 5%;
+	background-color: #252525;
+}
+.footmenu {
+    padding: 0;
+}
+.footmenu li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.footmenu li a {
+    color: white;
+    text-decoration: none;
+}
+.copy {
+	text-align: center;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-bottom: 3%;
+}
+
+
+/* Media Queries */
+/* xs */
+@media(min-width:310px) and (max-width:720px) {
+    ul.dropdown-lr {
+      width: 300px;
+      margin-top: 20%;
+      left: -95px;
+    }
+    ul.lr2 {
+      left: -230px;
+    }
+    img.brand {
+        width: 100px;
+        margin-top: -10px;
+    }
+    .mynav {
+        border-radius: 0;
+    }
+    .thenav {
+      text-align: left;
+    }
+    .shadow {
+      padding-top: 35%;
+    }
+    .services img {
+      margin-top: 9%;
+    }
+    .carousel-caption {
+      margin-bottom: -15px;
+      font-size: 10px;
+    }
+    .myform4 {
+      width: 100%;
+    }
+    .headtag {
+      margin-top: 17%;
+    }
+    div.forbgc2, div.forbgc3, div.forbgc5, div.forbgc6, div.forbgc7 {
+      margin-top: 30%;
+    }
+    button.fb2 {
+      display: block;
+      float:none;
+    }
+    button.gl2 {
+      display: block;
+      float:none;
+      margin-top: 15px;
+    }
+    div.forbgc2 {
+      padding:60% 0;
+    }
+    .top {
+      margin-top: 18%;
+    }
+    .addinf {
+      margin-top: 5%;
+    }
+    div#myProfile {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+    }
+}
+
+/* sm */
+@media(min-width:768px) and (max-width:960px) {
+    img.brand {
+        width: 100px;
+    }
+    .thenav {
+      text-align: left;
+    }
+    .services img {
+      margin-top: 9%;
+    }
+    .myform4 {
+      width: 100%;
+    }
+    .headtag {
+      margin-top: 17%;
+    }
+    button.fb2 {
+      display: block;
+      float:none;
+    }
+    button.gl2 {
+      display: block;
+      float:none;
+      margin-top: 15px;
+    }
+    div.forbgc2 {
+      padding:60% 0 !important;
+    }
+    .addinf {
+      margin-top: 5%;
+    }
+    footer {
+      text-align: center;
+    }
+}
+
+
+
+/* Extra Media Queries */
+@media(max-width:320px) {
+  a.navbar-brand img {
+    width: 50%;
+    margin-top: -8px;
+  }
+}

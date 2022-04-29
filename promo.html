@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Promo</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script> 
+            $(function(){
+            $("#header").load("includes/header.html"); 
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+
+    </head>
+<body>
+    <div class="forbgc4" style="padding:20% 0;">
+        <div id="header"></div>
+    </div>    
+    <hr>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="col-md-12 col-xs-12">
+            <h1 class="ff2">This week's promo</h1>
+        </div>
+
+        <div class="col-md-12 col-xs-12 mtop">
+            <h4 class="ff2">Terms and Conditions</h4>
+
+            <ol class="prm">
+                <li>Booking periode until May, 31 2018.</li>
+                <li>Discount 20% for reserving minimal 6 rooms in the same propertyper night with maximum discount IDR 1000.000.</li>
+                <li>Enter your promo code while processing a payment.</li>
+                <li>Unlimited coupon.</li>
+                <li>All the promos are non-refundable, not be able to be cancelled, not be able to be changed.</li>
+                <li>We have the rights to cancel the promo if there is something wrong against the terms and conditions</li>
+            </ol>
+
+            <div class="col-md-12 col-xs-12 mtop">
+                <h4 class="ff2 text-center">Our Partners</h4>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner1.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner2.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner3.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner4.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner5.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/icons/partner6.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12 mtop">
+                <h4 class="ff2 text-center">Payment Partners</h4>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/logo/bca.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/logo/mandiri.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/logo/mastercard.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="imgs/logo/visa.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b5/Logo-atm-bersama.png/revision/latest?cb=20180219075446" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <img src="https://www.tranyar.co.id/assets/client/logo_epay_bri.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Content -->
+
+    <div id="footer"></div>
+</body>
+</html>

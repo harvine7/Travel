@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#13e7ff">
+        
+        <title>Jumbo Travel - Booking Form</title>
+        <link rel="icon" href="http://icons.veryicon.com/ico/System/My%20Seven/Travel%20Airplane.ico">
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+        <!-- DatePicker -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
+        <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+    
+        <!-- Pace -->
+        <script src="pacejs/pace.js"></script>
+        <link rel="stylesheet" href="pacejs/themes/red/pace-theme-minimal.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script> 
+            $(function(){
+            $("#footer").load("includes/footer.html"); 
+            });
+        </script>
+
+        <script>
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 65)  /*height in pixels when the navbar becomes non opaque*/ 
+            {
+                $('.opaque-navbar').addClass('opaque');
+                $('.thenav').addClass('opaque2');
+            } else {
+                $('.opaque-navbar').removeClass('opaque');
+                $('.thenav').removeClass('opaque2');
+            }
+        });
+        </script>
+
+    </head>
+<body>
+    <header>
+        <div id="topheader">
+            <nav class="navbar navbgc navbar-fixed-top opaque-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><img src="imgs/icons/icon.png" alt="" class="img-responsive brand"></a>
+                    </div>
+
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <div class="mynav nav navbar-nav navbar-right bd2">
+                            <br>
+                            <span class="b1">
+                                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+                            </span>
+                            <span class="b2">
+                                <span class="badge mybadge2">2</span><span class="ff">Review</span>
+                            </span>
+                            <span class="b3">
+                                <span class="badge mybadge2">3</span><span class="ff">Payment</span>
+                            </span>
+                            <span class="b3">
+                                <span class="badge mybadge2">4</span><span class="ff">Process</span>
+                            </span>
+                            <span class="b3">
+                                <span class="badge mybadge2">5</span><span class="ff">Finish</span>
+                            </span>
+                        </div>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container headtag">
+        <div class="hidden-lg hidden-md">
+            <span class="b1">
+                <span class="badge mybadge">1</span><span class="ff">Booking</span>
+            </span>
+            <span class="b2">
+                <span class="badge mybadge2">2</span><span class="ff">Review</span>
+            </span>
+            <span class="b3">
+                <span class="badge mybadge2">3</span><span class="ff">Payment</span>
+            </span>
+            <span class="b3">
+                <span class="badge mybadge2">4</span><span class="ff">Process</span>
+            </span>
+            <span class="b3">
+                <span class="badge mybadge2">5</span><span class="ff">Finish</span>
+            </span>
+        </div>
+
+        <form method="POST" action="hotel-review.html">
+            <div class="col-md-8 col-xs-12">
+                <div class="col-md-12 bookform">
+                    <h3 class="ff2">Contact Details</h3>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" class="form-control" style="width:95%;border-radius:0;">
+                    <p>As on ID Card/passport/driving license (without degree or special characters)</p>
+                    <br>
+                    <label for="fullname">Mobile Number</label>
+                    <div class="form-inline">
+                        <input type="text" class="form-control" value="+62" disabled style="width:15%;border-radius:0;">
+                        <input type="number" name="number" id="number" class="form-control" style="width:80%;border-radius:0;">
+                    </div>
+                    <p>e.g. +62812345678, for Country Code (+62) and Mobile No. 0812345678</p>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" style="width:95%;border-radius:0;">
+                    <p>e.g. email@example.com</p>
+                    <br>
+                    <input type="checkbox"> I'm the guest 
+                    <br><br>
+                    <label for="email">Guest's Full Name</label>
+                    <input type="text" class="form-control" style="width:95%;border-radius:0;">
+                    <p>Fill in your name as on ID Card/passport/driving license (without title/special characters)</p>
+                    <br>
+                </div>
+
+                <div class="col-md-12 mtop2">
+                    <div class="pricedtl">
+                        <h4 class="ff2">Price Detail</h4>
+                        <table class="table" style="text-align:center;">
+                            <tr align="left">
+                                <td><span class="ff2">Deluxe Room Only (One night) x1</span></td>
+                                <td><span class="ff2">Rp 661.308</span></td>
+                            </tr>
+                            <tr align="left">
+                                <td><span class="ff2">Taxes and other fees (included sales tax, service fee and other taxes)</span></td>
+                                <td><span class="ff2">Rp 138.875</span></td>
+                            </tr>
+                            <tr align="left">
+                                <td><h4 class="ff2">Total</h4></td>
+                                <td><h3 class="ff2">Rp 800.183</h3></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="bookform">
+                    <h3 class="ff2"><i class="fa fa-building" aria-hidden="true" style="margin-right:5px;color:#13e7ff;"></i>Grand Tjokro Bandung</h3>
+                    <hr>
+                    <br>
+                    <img src="https://d1nabgopwop1kh.cloudfront.net/hotel-asset/10988233_0_t2_hr_10008390-2808x1872-FIT-AND-TRIM-ba377e79ddd2757e02454bd1db954e5f.jpeg" alt="" class="img-responsive" width="100">
+                    <h3 class="ff2">Superior Twin Room Only</h3>
+                    <p>Max. guests 2 person(s)</p>
+                    <br>
+                    <table class="table" style="text-align:center;">
+                        <tr>
+                            <td align="left">
+                                <span>Duration of stay</span><br>
+                                <span>Check-in</span><br>
+                                <span>Check-out</span><br>
+                                <span>Room type</span><br>
+                                <span>No. of rooms</span><br>
+                                <span>Guests per room</span>
+                            </td>
+                            
+                            <td align="right">
+                                <span>1 night</span><br>
+                                <span>Tue, April 10th 2018</span><br>
+                                <span>Wed, April 11th 2018</span><br>
+                                <span>Deluxe Room Only</span><br>
+                                <span>1 room</span><br>
+                                <span>2 guests</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12 mtop">
+                <button type="submit" class="btn ff2 mybtn2">Continue Booking</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

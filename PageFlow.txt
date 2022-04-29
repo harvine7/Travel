@@ -1,0 +1,52 @@
+FLIGHT FLOW
+------------------
+flight.html
+flight-prebooking.html
+flight-booking-form.html
+flight-payment-form.html
+flight-finish.html
+
+
+
+
+
+HOTEL FLOW
+-----------------
+hotel.html
+hotel-details.html
+hotel-booking-form.html
+hotel-review.html
+hotel-payment-form.html
+hotel-finish.html
+
+
+
+
+TRAIN FLOW
+-----------------
+train.html
+train-booking-form.html
+train-payment-form.html
+train-finish.html
+
+
+
+
+BUS FLOW
+----------------
+bus.html
+bus-booking-form.html
+bus-payment-form.html
+bus-finish.html
+
+
+
+
+FLIGHT + HOTEL FLOW
+---------------------
+flight-hotel.html
+flight-hotel-prebooking.html
+flight-hotel-booking-form.html
+flight-hotel-review.html
+flight-hotel-payment.html
+flight-hotel-finish.html
